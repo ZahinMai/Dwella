@@ -1,19 +1,15 @@
-@import 'bootstrap-variables';
+@import './bootstrap-variables';
 @import 'bootstrap/scss/functions';
-@import 'bootstrap/scss/variables';
+@import url('https://fonts.googleapis.com/css2?family=Artifika&family=Baloo+2:wght@400..800&display=swap');
 
 /* ==============================================================
 Bootstrap tweaks
 ===============================================================*/
 
-body,
-h1,
-h2,
-h3,
-h4 {
-  font-weight: 300;
+body{
+  background-color: $body;
+  font-family: "Baloo 2", sans-serif;
 }
-
 /* Increase contrast of links to get 100% on Lighthouse Accessibility Audit. Override this color if you want to change the link color, or use a Bootswatch theme */
 a {
   color: #533f03;
@@ -31,7 +27,7 @@ a:not([href]):not([tabindex]):hover.dropdown-item {
 
 /* override .dropdown-item.active background-color on hover */
 .dropdown-item.active:hover {
-  background-color: mix($dropdown-link-hover-bg, $dropdown-link-active-bg, 50%);
+  background-color: mix($dark-text, $primary, 50%);
 }
 
 a:hover {
@@ -218,22 +214,47 @@ ui bootstrap tweaks
 /* ==========================================================================
 angular-cli removes postcss-rtl processed inline css, processed rules must be added here instead
 ========================================================================== */
-/* page-ribbon.component.scss */
-.ribbon {
-  left: -3.5em;
-  -moz-transform: rotate(-45deg);
-  -ms-transform: rotate(-45deg);
-  -o-transform: rotate(-45deg);
-  -webkit-transform: rotate(-45deg);
-  transform: rotate(-45deg);
-}
 
-/* navbar.component.scss */
-.navbar {
-  ul.navbar-nav {
-    .nav-item {
-      margin-left: 0.5em;
+
+.btn {
+  padding: 1rem 2.5rem;
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 2px 2px black;
+  border: 2px solid transparent;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 0;
+
+  &.btn-primary {
+    background-color: $primary;
+    color: #fff;
+    border: 2px solid #e66045;
+
+    &:hover {
+      background-color: #fff;
+      border-color: $primary;
+      color: darken($primary, 10%);
+      transform: translateY(-2px);
     }
   }
+  &.btn-secondary {
+    background-color: #fff;
+    color: $primary;
+    border: 2px solid $primary;
+
+    &:hover {
+      background-color: lighten($primary, 10%);
+      border-color: darken($primary, 10%);
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(230, 96, 69, 0.4);
+    }
+  }
+
+
 }
-/* jhipster-needle-scss-add-main JHipster will add new css style */
+

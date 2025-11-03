@@ -5,11 +5,6 @@
 Navbar
 ========================================================================== */
 
-.navbar-version {
-  font-size: 0.65em;
-  color: $navbar-dark-color;
-}
-
 .profile-image {
   height: 1.75em;
   width: 1.75em;
@@ -17,20 +12,17 @@ Navbar
 
 .navbar {
   padding: 0.2rem 1rem;
-
+  background-color: transparent!important;
   a.nav-link {
-    font-weight: 400;
+    color: black;
   }
 }
 
 /* ==========================================================================
 Logo styles
 ========================================================================== */
-.logo-img {
-  height: 45px;
-  width: 45px;
-  display: inline-block;
-  vertical-align: middle;
-  background: url('/content/images/logo-jhipster.png') no-repeat center center;
-  background-size: contain;
+.navbar-title{
+  color: seagreen;
+  font-family: "Artifika", serif;
+  font-size: 2rem;
 }
