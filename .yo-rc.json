@@ -1,0 +1,23 @@
+{
+  "generator-jhipster": {
+    "applicationIndex": 0,
+    "applicationType": "monolith",
+    "authenticationType": "jwt",
+    "baseName": "Dwella",
+    "buildTool": "maven",
+    "clientFramework": "angular",
+    "creationTimestamp": 1762179969257,
+    "devDatabaseType": "h2Disk",
+    "devServerPort": 4200,
+    "entities": [],
+    "jhipsterVersion": "8.1.0",
+    "jwtSecretKey": "ZTAzZDVmNDVjYjI3Mzg5NmZhZmE0ZjlhYTllNGMwOWQ1Mzc5ZDA5MDIzZTFmYzZhNjQ3OGE4ZmJlNWYzMmNmNTI0M2ZiMDMwYjBmZGQ4OGNkOWY1N2VlOWFkMTI0NTFhNjk3MGE2YmQ2OWU5Mzg5MzMwMzQxMWQwZjQ3ZDMyZWE=",
+    "languages": ["en"],
+    "monorepository": true,
+    "nativeLanguage": "en",
+    "packageFolder": "com/dwella/app",
+    "packageName": "com.dwella.app",
+    "prodDatabaseType": "postgresql",
+    "skipCommitHook": true
+  }
+}
